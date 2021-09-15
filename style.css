@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+h1 {
+    text-align:center;
+    margin-left:12px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    margin-top: 1; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    background-color:  #dee1e6;
+    color: #1b2845;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-center: center;
+    font-family: 'Fredoka One', cursive;
+    
+}
+
+.bmi-calculator {
+    box-shadow: 0, 0, 2px;
+    padding: 50px;
+    margin: 20px;
+    height: 400px;
+    background-color: white;
+    //background-color:rgba( 0, 0, 0, 0.1)
+}
+
+.bmi-calculator-weight, .bmi-calculator-height {
+    margin-bottom:16px;
+    width: 100%;
+    
+}
+
+.weight-slider, .height-slider {
+    
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #dee1e6; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.weight-slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+.height-slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.weight-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%; 
+    background: #1b2845;
+    cursor: pointer;
+}
+
+.height-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%; 
+    background: #1b2845;
+    cursor: pointer;
+}
+
+.weight-slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.height-slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.inputNumber {
+    cursor: pointer;
+    height:30px;
+    width:60px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align: right;
+    font-family: 'Fredoka One', cursive;
+    font-size:24px;
+    color: #1b2845;
+    border: none;
+}
+
+.button {
+    
+    font-align: center;
+    font-size: 18px;
+    color: white;
+    width:100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #1b2845;
+    curso: pointer;  
+    font-family: 'Fredoka One', cursive;
+}
+
+#resultado {
+    background-color:  #dee1e6;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
